@@ -1,0 +1,19 @@
+hey this program is for javascript so save the below program under your js file or inside script tag..........
+
+
+
+
+
+
+
+const darkModeSlider = document.getElementById('The ID of your toggle tag(checkbox,range)');
+        const pageStyle = document.getElementById('ID of your stylesheet tag');
+
+        darkModeSlider.addEventListener('input', () => {
+            const sliderValue = darkModeSlider.value;
+            if (sliderValue === '1') {
+                pageStyle.setAttribute('href', 'The name of the css file for changed theme with .css extension ');
+            } else {
+                pageStyle.setAttribute('href', 'default css file name with .css extension');
+            }
+        });
